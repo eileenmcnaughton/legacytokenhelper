@@ -200,7 +200,6 @@ function legacytokenhelper_render_contact_to_tpl(TokenRenderEvent $e) {
       $smarty = CRM_Core_Smarty::singleton();
       // also add the contact tokens to the template
       $smarty->assign_by_ref('contact', $e->context['contact']);
-      $e->string = $smarty->fetch("string:{$e->string}");
     }
   }
 }
